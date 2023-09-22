@@ -1,7 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 <div id="app">
-    <p>{{ titulo }}</p>
+    <!-- Ao utilizar o v-once, o titulo é substituído apenas 1 vez, e não todas as vezes -->
+    <p v-once>{{ titulo }}</p>
     <p>{{ saudacao() }}</p>
     <a v-bind:href="link">Google</a>
 </div>
